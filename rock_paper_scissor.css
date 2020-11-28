@@ -1,0 +1,93 @@
+.head{
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+body{
+    font-size: 20px;
+}
+.score{
+    display:flex;
+    justify-content:space-between;
+}
+
+#Player_name{
+    display:none;
+}
+.main{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 60px;
+}
+#start_btn{
+    background-color:black;
+}
+#reset_btn{
+    display:none;
+    background-color:black;
+}
+.computer{
+    width:50vh;
+    height: 50vh;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    border-radius:20px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+.player{
+    width:50vh;
+    height:50vh;
+    justify-content:center;
+    display:flex;
+    align-items: center;
+    border-radius:20px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+.computer img{
+    width:90%;
+    height:90%;
+    
+}
+.player img{
+    width:90%;
+    height:90%;
+}
+.computer_circle{
+    width:15rem;
+    height: 15rem;
+    background:linear-gradient(to right,rgba(245,70,66,0.75),rgba(8,83,156,0.75));
+    position: absolute;
+    z-index: -1;
+    border-radius:300px;
+}
+.player_circle{
+    width:15rem;
+    height: 15rem;
+    background:linear-gradient(to right,rgba(245,70,66,0.75),rgba(8,83,156,0.75));
+    position: absolute;
+    z-index: -1;
+    border-radius:300px;
+}
+.btn{
+    padding:0.5rem 2rem;
+    background:none;
+    border:none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius:30px;
+    cursor: pointer;
+    font-weight:bold;
+    color: white;
+    background-color: #2f7a80;
+
+}
+.play{
+    display:flex;
+    justify-content:space-around;
+    margin:0;
+}
+#rock,#paper,#scissor{
+    display:none;
+}
+#instruction{
+    text-align:center;
+}
