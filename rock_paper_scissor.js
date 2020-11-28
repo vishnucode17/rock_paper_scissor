@@ -7,20 +7,20 @@ var computer_bg=document.getElementsByClassName('computer')[0].style.backgroundC
 function choose(){
     var item = Math.floor(Math.random()*Math.floor(3));
     if (item === 0){
-        computer_choice.src = 'images/rock.png';
+        computer_choice.src = 'rock.png';
     }
     else if (item === 1){
-        computer_choice.src = 'images/paper.png';
+        computer_choice.src = 'paper.png';
     }
     else if (item === 2){
-        computer_choice.src = 'images/scissor.png';
+        computer_choice.src = 'scissor.png';
     }
     return item;
 }
 function rock_btn(){
     choose()
     var option = choose()
-    document.getElementById('player_image').src='images/rock.png';
+    document.getElementById('player_image').src='rock.png';
     if (option == 0){
         document.getElementById('player_score').innerText=parseInt(document.getElementById('player_score').innerText)+0;
         computer_score=document.getElementById('computer_score').innerText=parseInt(document.getElementById('computer_score').innerText)+0;
@@ -43,7 +43,7 @@ function rock_btn(){
 function paper_btn(){
     choose()
     var option = choose()
-    document.getElementById('player_image').src='images/paper.png';
+    document.getElementById('player_image').src='paper.png';
     if (option == 0){
         document.getElementById('player_score').innerText=parseInt(document.getElementById('player_score').innerText)+1;
         document.getElementById('computer').style.border='4px solid red';
@@ -66,7 +66,7 @@ function paper_btn(){
 function scissor_btn(){
     choose()
     var option = choose()
-    document.getElementById('player_image').src='images/scissor.png';
+    document.getElementById('player_image').src='scissor.png';
     if (option == 0){
         document.getElementById('player_score').innerText=parseInt(document.getElementById('player_score').innerText)+0;
         computer_score=document.getElementById('computer_score').innerText=parseInt(document.getElementById('computer_score').innerText)+1;
