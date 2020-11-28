@@ -130,4 +130,15 @@ body{
         background:rgb(51, 218, 209);
         justify-content:space-around;
     }
+    .score{
+        margin-bottom: 30px;
+    }
+    .player_circle{
+        width:7rem;
+        height: 7rem;
+    }
+    .computer_circle{
+        width:7rem;
+        height: 7rem;
+    }
 }
